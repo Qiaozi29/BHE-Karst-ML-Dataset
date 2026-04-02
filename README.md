@@ -1,14 +1,14 @@
 # 🌍 岩溶地下水对地埋管换热器换热性能影响的研究的机器学习预测数据集
 **Dataset for ML-based Borehole Heat Exchanger (BHE) Prediction in Karst Geology**
 
-> **🏆 贵州大学硕士学位论文支撑数据与代码**
+> **🏆 硕士学位论文支撑数据与代码**
 > 本项目仓库包含了《岩溶地下水对地埋管换热器换热性能影响的研究》一文中所使用的完整数值模拟数据集与 Python 机器学习源代码。
 
 ---
 
 ## 📌 项目简介 (Project Overview)
 
-针对岩溶地区复杂的水文地质条件（涵盖无地下水、孔隙渗流、裂隙流、地下暗河管道流等多种介质形态），本研究通过**拉丁超立方抽样（LHS）**结合 **COMSOL Multiphysics** 瞬态传热模拟，结合第四章的瞬态数据，构建了包含 **46,110 组**独立工况的大规模地埋管换热器（BHE）运行数据集。
+针对岩溶地区复杂的水文地质条件（涵盖无地下水、孔隙渗流、裂隙流、管道流等多种介质形态），本研究通过**拉丁超立方抽样（LHS）**结合 **COMSOL Multiphysics** 瞬态传热模拟，结合第四章的瞬态数据，构建了包含 **46,110 组**独立工况的大规模地埋管换热器（BHE）运行数据集。
 
 配套的 Python 代码展示了如何利用 `Optuna` 框架对 `XGBoost`、`LightGBM` 等集成学习算法进行自动化超参数寻优，并通过 `SHAP` 框架对预测结果进行物理机制的深度可解释性分析。
 
@@ -66,6 +66,15 @@
 建议使用 Python 3.9+ 环境运行，需安装以下依赖：
 ```bash
 pip install pandas numpy scikit-learn xgboost lightgbm optuna shap matplotlib
-📜 学术声明 (Declaration)
-本数据集与代码仅供学术研究与同行交流使用。如需在您的研究中复用本数据集或代码逻辑，请在您的学术论文或报告中引用本人的硕士学位论文。
-Data and code are provided "as is" for academic replication, facilitating further research in geothermal energy and machine learning.
+---
+
+## 📜 学术声明 (Declaration)
+
+### ⚖️ 使用条款 (Terms of Use)
+本数据集与代码仅供学术研究与同行交流使用。如需在您的研究中复用本数据集、物理约束逻辑或模型架构，请在您的学术论文、专利或研究报告中引用本人的硕士学位论文。
+
+### ⚠️ 免责声明 (Disclaimer)
+Data and code are provided **"as is"** for academic replication, facilitating further research in geothermal energy and machine learning. The author is not responsible for any losses or errors caused by the use of this data or code.
+
+**📧 联系方式 (Contact)**
+如有关于数据集或模型算法的疑问，欢迎通过 GitHub 联系。
